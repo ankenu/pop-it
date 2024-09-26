@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Pop it</title>
+</head>
+<body>
+    <header class="bg-orange">
+        <div class="container flex justify-between font-medium">
+            <div class="flex justify-between items-center">
+                <div class="logo my-auto">
+                    НЕ_ПУПЫРКА.РУ
+                </div>
+                <button class="btn-secondary btn-burger" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+                </button>
+            </div>
+            <nav id="header-nav">
+                <ul class="flex justify-between">
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">СКИДКИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="bg-orange">
+            <div class="container flex items-center">
+                <div class="ad-content flex flex-column fit-content text-white">
+                    <div>
+                        <h1>POP IT!</h1>
+                        <span class="font-semibold text-lg">Лучшая игрушка-антистресс — бесконечная пупырчатая пленка!</span><br>
+                    </div>
+                    <div class="py-4">
+                        <button class="btn-primary">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="ad-image m-auto">
+                    <img src="./images/pop-it.png" alt="" class="img-pop-it">
+                </div>
+            </div>
+        </div>
+        <div class="container text-center max-w-4xl py-24">
+            <h2>Что такое Pop it?</h2>
+            <p class="text-base">
+                Таким образом реализация намеченных плановых заданий требуют от нас анализа новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+            </p>
+        </div>
+        <div class="bg-turquoise">
+            <div class="container text-center py-24">
+                <h2>Выбери свой Pop-It!</h2>
+                <div class="flex justify-around leading-8 items">
+                   <div>
+                        <img src="./images/square.png" alt="" width="125" height="125"><br>
+                        <span class="text-base font-semibold">Разноцветный квадратный</span><br>
+                        <button class="btn-secondary my-2">Купить</button>
+                   </div>
+                   <div>
+                        <img src="./images/amongus.png" alt="" width="125" height="125"><br>
+                        <span class="text-base font-semibold">Among Us, мраморный</span><br>
+                        <button class="btn-secondary my-2">Купить</button>
+                   </div>
+                   <div>
+                        <img src="./images/round.png" alt="" width="125" height="125"><br>
+                        <span class="text-base font-semibold">Разноцветный круглый</span><br>
+                        <button class="btn-secondary my-2">Купить</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-grid">
+            <div class="container flex py-24 gap-20 rules">
+                <div class="m-auto">
+                    <h2>Правила игры</h2>
+                    <p class="text-base">
+                        Задача организации, в особенности же новая модель организационной деятельности требуют от нас анализа форм развития. С другой стороны новая модель организационной деятельности влечет за собой процесс внедрения и модернизации новых предложений. Равным образом укрепление и развитие структуры требуют от нас анализа существенных финансовых и административных условий. 
+                    </p>
+                </div>
+                <div>
+                    <img src="./images/photo.jpg" alt="" height="300">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray text-white py-4">
+        <div class="container flex">
+            <div class="my-auto font-semibold">
+                НЕ_ПУПЫРКА.РУ
+            </div>
+            <nav class="w-full font-medium">
+                <ul class="flex justify-around">
+                    <li><a href="#">Способы оплаты</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Опт</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+function openMenu() {
+    const el = document.getElementById('header-nav')
+    if (el.style.display == '') {
+        el.style.display = 'block'
+    } else {
+        el.style.display = ''
+    }
+}
+</script>
+</html>
